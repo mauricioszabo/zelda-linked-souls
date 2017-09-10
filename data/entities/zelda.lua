@@ -4,7 +4,6 @@ local game = zelda:get_game()
 local map = game:get_map()
 local sprite = zelda:get_sprite()
 local hero = game:get_hero()
-local movement
 
 zelda:set_optimization_distance(0)
 zelda:set_drawn_in_y_order(true)
@@ -48,6 +47,6 @@ sol.timer.start(zelda, 20, function()
   return true
 end)
 
---function zelda:on_position_changed()
-  --io.write("CHANGE!")
---end
+function zelda:create(map) {
+  map:create_custom_entity
+}
