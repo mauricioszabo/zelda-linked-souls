@@ -1,5 +1,6 @@
-map{ id = "first_map", description = "First map" }
 map{ id = "inside_store", description = "Inside Store" }
+map{ id = "link_house", description = "First map" }
+map{ id = "outside_house", description = "Outside Link's House" }
 map{ id = "outside_store", description = "Outside Store" }
 
 tileset{ id = "cave", description = "Cave" }
@@ -15,9 +16,11 @@ tileset{ id = "temple_blue", description = "Temple (blue)" }
 tileset{ id = "temple_green", description = "Temple (green)" }
 tileset{ id = "temple_yellow", description = "Temple (yellow)" }
 
+sprite{ id = "enemies/chicken", description = "enemies/chicken" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/tentacle", description = "Enemy: Tentacle" }
 sprite{ id = "entities/arrow", description = "Arrow" }
+sprite{ id = "entities/bed", description = "entities/bed" }
 sprite{ id = "entities/block", description = "Block" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/boomerang1", description = "Boomerang 1" }
@@ -64,12 +67,14 @@ sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword2", description = "Hero sword 2" }
 sprite{ id = "hero/sword3", description = "Hero sword 3" }
 sprite{ id = "hero/sword4", description = "Hero sword 4" }
+sprite{ id = "hero/sword5", description = "Zelda's Sword" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/sword_stars2", description = "Hero sword stars 2" }
 sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
 sprite{ id = "hero/tunic2", description = "Hero tunic 2" }
 sprite{ id = "hero/tunic3", description = "Hero tunic 3" }
+sprite{ id = "hero/tunic4", description = "Hero Tunic Zelda" }
 sprite{ id = "hud/gameover_fade", description = "HUD: Game-over fade" }
 sprite{ id = "hud/piece_of_heart_icon", description = "Piece of Heart icon" }
 sprite{ id = "menus/hero_head", description = "Menu: hero head" }
@@ -249,8 +254,12 @@ sound{ id = "wrong", description = "wrong" }
 sound{ id = "zora", description = "zora" }
 
 
+enemy{ id = "chicken", description = "chicken" }
+enemy{ id = "tentacle", description = "tentacle" }
 
+entity{ id = "zelda", description = "zelda" }
 
+language{ id = "en", description = "English" }
 
 font{ id = "alttp", description = "alttp" }
 font{ id = "green_digits", description = "Green digits" }

@@ -14,13 +14,19 @@ function initial_game:initialize_new_savegame(game)
 
   -- You can modify this function to set the initial life and equipment
   -- and the starting location.
-  game:set_starting_location("first_map", "starting_destination")
+  game:set_starting_location("link_house", "default")
+--  game:set_starting_location("outside_house", "here")
 
   game:set_max_life(6)
   game:set_life(game:get_max_life())
   game:set_max_money(100)
   game:set_ability("lift", 1)
+  game:set_ability("sword", 5)
+  game:set_ability("tunic", 4)
+  
   game:set_ability("sword", 1)
+  game:set_ability("tunic", 1)
+  game.intro = true
 end
 
 return initial_game

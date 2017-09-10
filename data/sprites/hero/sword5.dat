@@ -1,0 +1,10 @@
+animation{
+  name = "sword",
+  src_image = "hero/zelda_attack_anim.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 35, frame_height = 35, origin_x = 8, origin_y = 22, num_frames = 10 },
+    { x = 0, y = 35, frame_width = 35, frame_height = 35, origin_x = 18, origin_y = 30, num_frames = 10 },
+    { x = 0, y = 70, frame_width = 35, frame_height = 35, origin_x = 26, origin_y = 24, num_frames = 10 },
+    { x = 0, y = 105, frame_width = 35, frame_height = 35, origin_x = 17, origin_y = 20, num_frames = 10 },
+  },
+}

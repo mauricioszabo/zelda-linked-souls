@@ -1,0 +1,61 @@
+dialog{
+  id = "part1.start",
+  text = [[
+And the Master Sword sleeps again...
+forever...
+
+
+Or, at least, that was the plan.
+
+
+
+After saving the world, Zelda and
+Link returned to their lives.
+And yet, things were not right for young Zelda
+
+She is a princess, and as such, she will have
+to inherit Hyrule. Yet, the adventures she 
+sharedwith Link still lingers in her mind. 
+Somehow, she yearns for the friendship they had.
+Unknown to everyone, she began to learn some
+powerfull magic, to be able to escape the 
+castle.
+
+
+With her new powers, she began to visit Link
+in his house, to talk to him.
+His "peasant life" is something she never knew..
+and yet, he was the old hero that Hyrule had.
+He had done so much more for her kingdom than
+anyone, and yet... his glory was nothing more
+than a mere thanks for the King.
+]]
+}
+
+dialog{
+  id = "part1.zelda_explaining",
+  text = [[
+Link, I'm sorry...
+I couldn't save you...
+
+
+Agahnim's magic is way too strong for me...
+
+
+
+But there's still a way. You'll have to
+trust me.
+There's a forbidden magic that binds two people
+together.
+It's way too dangerous to do. Only royal people
+know of its existence.
+Our souls are bound now.
+
+Now, you'll wake up. And we'll be together all
+the time.
+Let's go to the wise man in Kakariko Village.
+He'll know what to do.
+For now on, we're together...
+]]
+}
+

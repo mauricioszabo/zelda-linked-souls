@@ -1,0 +1,33 @@
+animation{
+  name = "stopped",
+  src_image = "hero/zelda_walk.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 17, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 48, frame_width = 17, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 24, frame_width = 17, frame_height = 24, origin_x = 8, origin_y = 21 },
+    { x = 0, y = 72, frame_width = 17, frame_height = 24, origin_x = 8, origin_y = 21 },
+  },
+}
+animation{
+  name = "sword",
+  src_image = "hero/zelda_attack.png",
+  frame_delay = 50,
+  directions = {
+    { x = 0, y = 0, frame_width = 35, frame_height = 35, origin_x = 7, origin_y = 23, num_frames = 10 },
+    { x = 0, y = 35, frame_width = 35, frame_height = 35, origin_x = 18, origin_y = 31, num_frames = 10 },
+    { x = 0, y = 70, frame_width = 35, frame_height = 35, origin_x = 27, origin_y = 23, num_frames = 10 },
+    { x = 0, y = 105, frame_width = 35, frame_height = 35, origin_x = 17, origin_y = 21, num_frames = 10 },
+  },
+}
+animation{
+  name = "walking",
+  src_image = "hero/zelda_walk.png",
+  frame_delay = 150,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 0, y = 0, frame_width = 17, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 48, frame_width = 17, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 24, frame_width = 17, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+    { x = 0, y = 72, frame_width = 17, frame_height = 24, origin_x = 8, origin_y = 21, num_frames = 6 },
+  },
+}
