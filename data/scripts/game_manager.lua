@@ -2,6 +2,7 @@ local game_manager = {}
 
 
 local initial_game = require("scripts/initial_game")
+local chars = require("scripts/lib/chars")
 
 -- Starts the game from the given savegame file,
 -- initializing it if necessary.
@@ -17,11 +18,17 @@ function game_manager:start_game(file_name)
   game:start()
 
   local hero = game:get_hero()
-  hero_steps = {{0, 0, 1}}
+  hero_steps = {}
   function hero:on_position_changed(x, y, layer)
     hero_steps[#hero_steps+1] = {x, y, hero:get_direction()}
     if #hero_steps > 25 then
       table.remove(hero_steps, 1)
+    end
+  end
+
+  function game:on_map_changed(map)
+    if game.sidekick then
+      chars:create_sidekick(map, true)
     end
   end
 

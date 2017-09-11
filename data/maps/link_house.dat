@@ -10,7 +10,7 @@ properties{
 }
 
 tile{
-  layer = 0,
+  layer = 1,
   x = 152,
   y = 184,
   width = 96,
@@ -537,6 +537,7 @@ destructible{
   y = 69,
   sprite = "entities/vase",
   destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 
@@ -546,6 +547,7 @@ destructible{
   y = 85,
   sprite = "entities/vase",
   destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 
@@ -555,6 +557,7 @@ destructible{
   y = 101,
   sprite = "entities/vase",
   destruction_sound = "stone",
+  weight = 1,
   damage_on_enemies = 2,
 }
 

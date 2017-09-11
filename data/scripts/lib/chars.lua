@@ -1,5 +1,8 @@
 local chars = {
-  principal = "link"
+  principal = "link",
+  link_sword = 0,
+  zelda_sword = 1,
+  link_strength = 1
 }
 
 local sidekick
@@ -22,10 +25,14 @@ local function get_sprite_for(name)
   end
 end
 
-function chars:create_sidekick(map)
+function chars:create_sidekick(map, update)
   hero = map:get_game():get_hero()
   local x, y, layer = hero:get_position()
   current_map = map
+
+  if update then
+    hero_steps = {{x, y, hero:get_direction()}}
+  end
 
   sidekick = map:create_custom_entity({
     direction=0,
@@ -45,10 +52,16 @@ function chars:swap()
     return
   end
 
+  local game = current_map:get_game()
+
   if chars.principal == "link" then
     hero:set_sword_sprite_id("hero/sword5")
+    game:set_ability("sword", chars.zelda_sword)
+    game:set_ability("lift", 0)
   else
     hero:set_sword_sprite_id("hero/sword1")
+    game:set_ability("sword", chars.link_sword)
+    game:set_ability("lift", chars.link_strength)
   end
 
 --  sidekick:create_sprite(get_sprite_for(chars.principal))
@@ -57,7 +70,7 @@ function chars:swap()
   hero:set_tunic_sprite_id(get_sprite_for(chars.principal))
 
   sidekick:remove()
-  chars:create_sidekick(current_map)
+  chars:create_sidekick(current_map, false)
 end
 
 return chars

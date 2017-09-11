@@ -21,10 +21,9 @@ function initial_game:initialize_new_savegame(game)
   game:set_life(game:get_max_life())
   game:set_max_money(100)
   game:set_ability("lift", 1)
-  game:set_ability("sword", 5)
-  game:set_ability("tunic", 4)
   
-  game:set_ability("sword", 1)
+  game:set_ability("sword", 0)
+  game:set_ability("sword_knowledge", 0)
   game:set_ability("tunic", 1)
   game.intro = true
 end

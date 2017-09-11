@@ -38,9 +38,12 @@ function map:on_started()
           bed:get_sprite():set_animation("empty_open")
           sol.audio.play_sound("hero_lands")
 
+          game.sidekick = true
+          game.intro = false
+
           sol.timer.start(map, 500, function()
             zelda:set_visible(false)
-            chars:create_sidekick(map)
+            chars:create_sidekick(map, true)
             return false
           end)
 
