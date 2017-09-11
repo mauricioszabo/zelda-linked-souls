@@ -3,7 +3,8 @@
 -- See the Lua API! http://www.solarus-games.org/doc/latest
 
 require("scripts/features")
-doors = require("scripts/lib/doors")
+local doors = require("scripts/lib/doors")
+local chars = require("scripts/lib/chars")
 
 local game_manager = require("scripts/game_manager")
 local game = nil
@@ -51,13 +52,9 @@ function sol.main:on_key_pressed(key, modifiers)
     -- Escape in title screens: stop the program.
     sol.main.exit()
     handled = true
-  elseif key == "q" then
-    hero:set_sword_sprite_id("hero/sword1")
-    hero:set_tunic_sprite_id("hero/tunic1")
-  elseif key == "w" then
-    hero:set_sword_sprite_id("hero/sword5")
-    hero:set_tunic_sprite_id("hero/tunic4")
-    end
+  elseif key == "q" or key == "w" then
+    chars.swap()
+  end
 
   return handled
 end

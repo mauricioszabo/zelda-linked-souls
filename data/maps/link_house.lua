@@ -9,6 +9,7 @@
 
 local map = ...
 local game = map:get_game()
+local chars = require("scripts/lib/chars")
 
 local night_overlay = sol.surface.create(map:get_size())
 local alpha = 220
@@ -37,6 +38,12 @@ function map:on_started()
           bed:get_sprite():set_animation("empty_open")
           sol.audio.play_sound("hero_lands")
 
+          sol.timer.start(map, 500, function()
+            zelda:set_visible(false)
+            chars:create_sidekick(map)
+            return false
+          end)
+
           sol.timer.start(map, 20, function()
             alpha = alpha - 1
             if alpha <= 0 then
@@ -56,6 +63,7 @@ function map:on_started()
     --game:start_dialog("part1.start")
   else
     night_overlay:clear()
+    zelda:set_visible(false)
   end
 end
 

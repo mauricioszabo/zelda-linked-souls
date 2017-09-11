@@ -762,15 +762,3 @@ tile{
   pattern = "house.roof_red.corner.4",
 }
 
-custom_entity{
-  name = "follow",
-  layer = 1,
-  x = 80,
-  y = 85,
-  width = 16,
-  height = 16,
-  direction = 3,
-  sprite = "hero/tunic4",
-  model = "zelda",
-}
-

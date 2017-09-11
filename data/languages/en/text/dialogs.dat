@@ -1,4 +1,11 @@
 dialog{
+  id = "debug",
+  text = [[
+BOO
+]]
+}
+
+dialog{
   id = "part1.start",
   text = [[
 And the Master Sword sleeps again...
